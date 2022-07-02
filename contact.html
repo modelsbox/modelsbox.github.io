@@ -1,0 +1,82 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ModelsBox</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+  <!-- Header Nav -->
+  <div class="row">
+    <div class="column">
+      <div class="header-nav">
+        <img src="img/logo.png" alt="" width="100">
+        <p class="header-nav-subtitle">Models for Computational Science</p>
+        <div class="menu-centered">
+          <ul class="menu">
+            <li><a href="index.html" class="header-nav-link">Solutions</a></li>
+            <li><a href="about.html" class="header-nav-link">About</a></li>
+            <li><a href="contact.html" class="header-nav-link is-active">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="grid-x grid-margin-x">
+      <div class="small-12 medium-6 cell">
+        <h1>Contact Us</h1>
+        <p>Want to connect?</p>
+        <p>Please send us a message here and we will get back to you shortly.</p>
+      </div>
+      <div class="small-12 medium-6 cell">
+        <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSc-COnj4uoXAZ50PGrs8EEkx9Ca0NQdfNznsxve_6XFlT4C5Q/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+          <div class="grid-x grid-margin-x">
+            <div class="medium-6 cell">
+              <label for="entry.2796765">First Name</label>
+              <input type="text" name="entry.2796765" id="entry.2796765" class="contact-form-field">
+            </div>
+            <div class="medium-6 cell">
+              <label for="entry.1578520879">Last Name</label>
+              <input type="text" name="entry.1578520879" id="entry.1578520879" class="contact-form-field">
+            </div>
+          </div>
+          <div class="row">
+            <label for="entry.2028355051">Email</label>
+            <input type="text" name="entry.2028355051" id="entry.2028355051" class="contact-form-field">
+          </div>
+          <div class="row">
+            <label for="entry.1033666563">Subject</label>
+            <input type="text" name="entry.1033666563" id="entry.1033666563" class="contact-form-field">
+          </div>
+          <div class="row">
+            <label for="entry.773510661">Message</label>
+            <textarea name="entry.773510661" id="entry.773510661" cols="10" rows="10" class="contact-form-field"></textarea>
+          </div>
+          <input type="submit" value="Submit" class="button contact-submit">
+        </form>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/vendor/jquery.js"></script>
+  <script type="text/javascript">var submitted=false;</script>
+  <script type="text/javascript">
+    $('#gform').on('submit', function(e) {
+      $('#gform *').fadeOut(2000);
+      $('#gform').prepend('Your submission has been processed...');
+    });
+  </script>
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
